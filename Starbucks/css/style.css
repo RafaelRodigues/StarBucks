@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    display: flex;
+    fle
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin:0 auto;
+    padding: 0 2%;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    margin-top: 25px;
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo{
+    margin-left: 116px;
+    width: 40%;
+}
+
+.menu{
+    width: 39%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    position:absolute;
+    bottom: -420px;
+    right:-28%;
+    width: 70%;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #017143;
+}
+
+/*A cessão a baixo, não mostra no vídeo da aula*/
+
+section img[src="assets/img1.png"]{
+    position: absolute;
+    top: -9%;
+    right: 57%;
+    width: 40%;
+}
+
+.social-media{
+    position: absolute;
+    right: 42%;
+    top: 17%;
+}
+
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 20px 0;
+}
+
+.social-media :first-child img{
+    width: 15px;
+}
+
+.texto-sobre{
+    margin:70px;
+    margin-top: 45px;
+    width: 50%;
+    /*background-color: orange;*/
+}
+
+.texto-sobre h1{
+    font-size: 50px;
+}
+
+.texto-sobre p{
+    margin: 30px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 600px
+}
+
+.texto-sobre button{
+    border:0;
+    background-color: #017143;
+    color: white;
+    border-radius: 16px;
+    width: 120px;
+    height: 33px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1240px){
+   .extras{
+        position:absolute;
+        width: 67%;
+        height: 875px;
+    }
+
+    .social-media{
+        padding-right: 1.5%;
+    }
+
+    section img[src="assets/img1.webp"]{
+       position: absolute;
+        top: -3%;
+        right: 57%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .extras{
+        position:absolute;
+        bottom: -420px;
+        right:-28%;
+        width: 74%;
+        height: 860px;
+    }
+
+    section img[src="assets/img1.webp"]{
+        position: absolute;
+        top: -2%;
+        right: 57%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        max-width: 1280px;
+        margin:0 auto;
+        padding: 0 2%;
+    }
+
+    header{
+        margin-top: 25px;
+        height: 200px;
+        padding: 20px 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .logo{
+        margin-left: 2%;
+        width: 40%;
+    }
+
+    .menu{
+        width: auto;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: -26%;
+        word-wrap: break-word;
+    }
+
+    .extras{
+        position:absolute;
+        bottom: -420px;
+        right:-40%;
+        width: 60%;
+        height: 1200px;
+        border-radius: 0;
+    }
+
+    section img[src="assets/img1.webp"]{
+        position: absolute;
+        top: 20%;
+        right: 57%;
+        width: 40%;
+    }
+
+    .social-media{
+        position: absolute;
+        right: 1px;
+        top: 80%;
+        position: fixed;
+    }
+
+    .social-media img{
+        display: inline-block;
+        width: 20px;
+        margin: 20px 7px;
+    }
+
+    .social-media :first-child img{
+        width: 12px;
+    }
+}
